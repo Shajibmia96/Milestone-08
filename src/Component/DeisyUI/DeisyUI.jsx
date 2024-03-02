@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "../Link/Link";
 import { RiMenuFoldFill  } from "react-icons/ri";
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import PriceOptions from "../PriceOptions/PriceOptions";
 const DeisyUI = () => {
 
       const [open , setOpen]  = useState(false)
@@ -26,12 +27,17 @@ const DeisyUI = () => {
 
                   
                   </div>
-                <ul className="md:flex">
+                <ul className={`md:flex rounded-lg justify-between bg-black text-white m-4 duration-1000 p-4 absolute md:static shadow-2xl hover:bg-gradient-to-r from-black to-orange-300
+                                ${open ? "top-1" : "-top-96"}
+                 `}>
                      {
                         routes.map(route => <Link key={route.id} route={route}></Link>)
                      }
                 </ul>
               </nav>
+
+              {/* Show price tag  */}
+               <PriceOptions></PriceOptions>
         </div>
     );
 };
