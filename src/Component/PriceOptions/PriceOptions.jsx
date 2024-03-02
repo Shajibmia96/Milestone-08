@@ -12,7 +12,9 @@ const PriceOptions = () => {
             "Group Classes",
             "Personal Trainer",
             "Locker Rooms",
-            "Steam Room"
+            "Steam Room",
+            "Amir",
+            "Tipu"
           ],
           price: 50
         },
@@ -51,7 +53,8 @@ const PriceOptions = () => {
             "Massage Therapy",
             "Tanning Beds",
             "Cycling Studio",
-            "Juice Bar"
+            "Juice Bar",
+            "Shajib"
           ],
           price: 80
         }
@@ -61,10 +64,12 @@ const PriceOptions = () => {
       
     return (
         <div className="pl-4"> 
-          <h1 className="text-2xl">Some Price tag in my Gym Center</h1>
+          <h1 className="text-2xl">Best price in the town </h1>
+              <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4  mx-12">
               {
                  gymData.map( option => <PriceOption key={option.id} option={option}></PriceOption>)
               }
+              </div>
         </div>
     );
 };
