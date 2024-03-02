@@ -5,7 +5,7 @@ const Link = ({route}) => {
     );
 };
 
-Link.propTypes={
-    route:PropTypes.array
+Link.propTypes = {
+    route : PropTypes.object
 }
 export default Link;
