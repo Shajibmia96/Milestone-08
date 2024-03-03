@@ -1,5 +1,6 @@
 import './App.css'
 import DeisyUI from './Component/DeisyUI/DeisyUI'
+import LineChart from './Component/LineChart/LineChart'
 
 function App() {
   
@@ -10,7 +11,7 @@ function App() {
           </p></DeisyUI>
       <h1 className='text-4xl font-bold pl-4'>Prices prediction </h1>
 
-      
+      <LineChart></LineChart>
       
     </>
   )
