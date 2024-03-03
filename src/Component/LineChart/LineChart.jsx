@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 import { LineChart as LCChart, Line , XAxis, YAxis } from 'recharts';
 const LineChart = () => {
     const studentsData = [
